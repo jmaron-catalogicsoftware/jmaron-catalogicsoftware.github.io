@@ -1,7 +1,8 @@
-@import "_fonts.scss";
+@import "fonts";
+@import "colors";
 
 html {
-  background-color: #f1f5f9;
+  background-color: #fff;
   font-family: "Poppins", sans-serif;
 }
 
@@ -9,7 +10,6 @@ body {
   margin: 0;
   width: 100%;
   line-height: 1.5;
-  font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -20,4 +20,18 @@ h1 {
   font-size: 40px;
   font-weight: 600;
   line-height: 37px;
+}
+
+h2 {
+  color: $primary;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary;
+
+  &:hover {
+    color: $tertiary;
+    transition: all 0.3s ease-in-out;
+  }
 }
