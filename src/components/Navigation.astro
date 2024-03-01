@@ -1,9 +1,16 @@
 ---
-import '../styles/global.css';
+import '../styles/navigation.scss';
+import '../styles/_buttons.scss';
 ---
 
-<div class="nav-links">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/blog">Blog</a>
+<div class="navigation">
+  <div class="navigation__left">
+  <img class="navigation__logo" src="src/images/logo-catalogic-colored.svg">
+    <a href="/">Home <b>+</b></a>
+    <a href="/about">About <b>+</b></a>
+    <a href="/blog">Blog <b>+</b></a>
+    </div>
+    <div class="navigation__right">
+      <button class="button button__big">Request demo</button>
+    </div>
   </div>

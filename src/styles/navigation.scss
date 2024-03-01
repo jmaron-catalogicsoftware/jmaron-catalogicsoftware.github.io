@@ -1,0 +1,27 @@
+@import "./colors";
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 12px;
+  background-color: $white;
+  padding: 2em 4em;
+
+  &__logo {
+    margin-right: 3em;
+    height: 40px;
+  }
+
+  a {
+    color: $text;
+    text-decoration: none;
+    margin: 0 1em;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+}
