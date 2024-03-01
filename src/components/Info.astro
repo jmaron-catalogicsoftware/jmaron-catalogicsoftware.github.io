@@ -1,0 +1,37 @@
+---
+const { content } = Astro.props;
+---
+<div class="alert alert-info">
+    <span class="icon">i</span>
+    <span class="content">{content}</span>
+</div>
+
+<style>
+    .alert-info {
+        display: block;
+        background-color: rgb(196, 223, 223);
+        border: 1px solid rgb(4, 102, 163);
+        border-radius: 20px;
+        padding: 1em;
+        color: black;
+        display: flex;
+    }
+
+    .icon {
+        color: white;
+        font-weight: 500;
+        margin-right: 2em;
+        border-radius: 50%;
+        background-color: rgb(4, 102, 163);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
